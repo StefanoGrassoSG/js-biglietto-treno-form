@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>calcolo del prezzo del biglietto del treno</title>
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <!--CSS-->
         <link rel="stylesheet" href="css/style.css">
         <!--BOOTSTRAP-->
@@ -26,27 +30,27 @@
                     <form>
                         <div class="row">
                             <div class="col-5 text-center py-3">
-                                <label class="d-block pb-2" for="name">Name and Lastname</label>
-                                <input type="text" name="name" id="name">
+                                <label class="d-block pb-2 text-primary" for="name">Name and Lastname</label>
+                                <input class="text-center border-primary rounded" type="text" name="name" id="name">
                             </div>
 
                             <div class="col-2 text-center py-3">
-                                <label class="d-block pb-2" for="km">Km to go</label>
-                                <input class="w-50" type="text" name="km" id="km">
+                                <label class="d-block pb-2 text-primary" for="km">Km to go</label>
+                                <input class="w-75 text-center border-primary rounded" type="text" name="km" id="km">
                             </div>
 
                             <div class="col-5 text-center py-3">
-                                <label class="d-block pb-2" for="age">Age range</label>
-                                <select name="age" id="age">
-                                    <option value="underage">Underage</option>
-                                    <option value="Over65">Over 65</option>
-                                    <option value="18-65">18 to 65</option>
+                                <label class="d-block pb-2 text-primary" for="age">Age range</label>
+                                <select class="border-primary rounded" name="age" id="age">
+                                    <option class="border-primary" value="underage">Underage</option>
+                                    <option class="border-primary" value="Over65">Over 65</option>
+                                    <option class="border-primary" value="18-65">18 to 65</option>
                                 </select>
                             </div>
 
                             <div class="col-12 text-center mt-4 mb-4">
-                                <input class="p-1" type="button" value="Generates">
-                                <input class="p-1" type="reset" value="Cancel">
+                                <input class="p-1 fw-bolder text-primary" type="button" value="Generates">
+                                <input class="p-1 fw-bolder text-primary" type="reset" value="Cancel">
                             </div>
                         </div>
                     </form>
@@ -70,7 +74,7 @@
                                     PASSENGER NAME
                                 </h5>
 
-                                <div>
+                                <div id="pass" class="fw-semibold">
                                     
                                 </div>
                             </div>
@@ -79,7 +83,7 @@
                                     Offer
                                 </div>
 
-                                <div class="mt-5">
+                                <div class="mt-5 fw-semibold">
                                     Standard ticket
                                 </div>
                             </div>
@@ -88,7 +92,7 @@
                                     Wagon
                                 </div>
 
-                                <div class="mt-5">
+                                <div id="wagon" class="mt-5 fw-semibold">
 
                                 </div>
                             </div>
@@ -97,7 +101,7 @@
                                     CP Code
                                 </div>
 
-                                <div class="mt-5">
+                                <div id="CP" class="mt-5 fw-semibold">
                                     
                                 </div>
                             </div>
@@ -106,7 +110,7 @@
                                     Ticket price
                                 </div>
 
-                                <div id="price" class="mt-5">
+                                <div id="price" class="mt-5 fw-semibold">
                                     
                                 </div>
                             </div>
