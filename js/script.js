@@ -4,17 +4,13 @@
 
 const price = 0.21;
 
-const kmInput = document.querySelector('[name="km"]');
-
-const ageInput = document.querySelector('[name="age]');
-
-const h1 = document.querySelector('h1')
+const outPut = document.getElementById('price')
 
 /***************
      BUTTON
 ***************/
 
-const myButton = document.querySelector('[value="generates"]');
+const myButton = document.querySelector('[value="Generates"]');
 myButton.addEventListener('click',
     function() {
         const kmInput = document.querySelector('[name="km"]');
@@ -25,14 +21,15 @@ myButton.addEventListener('click',
         
         let finalPrice = kmOutput * price;
 
-        if (ageOutput < 18 && ageOutput > 0) {
+        if (ageOutput == 'underage') {
             finalPrice = finalPrice * 0.8;
         }
 
-        else if (ageOutput > 65) {
+        else if (ageOutput == 'Over65') {
             finalPrice = finalPrice * 0.6;
         }
 
-        h1.innerHTML = finalPrice + '€';
+        outPut.innerHTML = finalPrice.toFixed(2) + '€';
+        
     }
 )   
